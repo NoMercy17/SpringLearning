@@ -1,0 +1,2 @@
+Introductive chapter where we talk mostly when to use the Spring framework with its vast projects and when not, also what are some of the most common projects and their use cases.
+what is the business logic and when are the cases to look for when to not use a framework and stick with a different approach

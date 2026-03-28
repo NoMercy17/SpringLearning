@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring_In_Real_World" />
+        <module name="02_Spring_Context" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Spring_In_Real_World" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
