@@ -1,0 +1,7 @@
+A build tool is a software we use to build apps more easily, it does task as:
+    - Downloading the dependencies needed by your app
+    - Running tests
+    - Validating that the syntax follows rules that you define
+    - Checking for security vulnerabilities
+    - Compiling the app
+    - Packaging the app in an executable archive

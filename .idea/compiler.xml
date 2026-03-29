@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="02_Spring_Context" />
+        <module name="02_Spring_Context_Defining_beans" />
+        <module name="03_Spring_Context_Wiring_beans" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="02_Spring_Context" target="21" />
       <module name="Spring_In_Real_World" target="21" />
     </bytecodeTargetLevel>
   </component>
