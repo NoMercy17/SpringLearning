@@ -1,0 +1,24 @@
+Three Main Approaches
+
+1. Direct Method Reference
+Directly calling the `@Bean` annotated method that creates one bean from the method that creates another. Spring intercepts these calls; if the bean already exists in the context,
+Spring returns that instance rather than calling the method again.
+
+2. Method Parameter Injection
+Defining a dependency as a parameter in a `@Bean` method. When Spring calls the method, it automatically searches the context for a bean of the required type and provides it as the parameter's value.
+
+3. The @Autowired Annotation
+Used with `@Component` classes and `@ComponentScan` to instruct Spring to inject dependencies automatically:
+- **Constructor Injection:** (Recommended) Annotate the constructor. This is the most robust approach for production code as it allows for `final` fields and easier testing.
+- **Field Injection:** Annotate the field directly. While convenient for quick examples, it's generally discouraged in large-scale applications.
+- **Setter Injection:** Annotate the setter method. This approach is rarely used in modern production code.
+
+Handling Multiple Beans
+
+When multiple beans of the same type exist in the context:
+- **@Primary:** Designates a default bean to be used when no specific bean is requested.
+- **@Qualifier:** Allows you to explicitly specify which bean should be injected by providing its name (e.g., `@Qualifier("beanName")`).
+
+## Important Considerations
+- Be cautious of defining objects whose creation depends on one another. Spring will throw an error if it cannot resolve a circular reference.
+- By default, Spring beans are singletons. Wiring ensures that the same instance is shared across all dependent beans.
