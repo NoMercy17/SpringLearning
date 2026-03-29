@@ -5,3 +5,12 @@ A build tool is a software we use to build apps more easily, it does task as:
     - Checking for security vulnerabilities
     - Compiling the app
     - Packaging the app in an executable archive
+
+You can add beans to the Spring context in three ways: using the @Bean annotation,
+using stereotype annotations, and doing it programmatically
+    - Using @Bean enables you to add any kind of object instance as a bean and even multiple instances of the
+    same kind to the Spring context. More flexible than using stereotype annotations, but you need to write more code,
+    a separate method for each independent instance added to the context
+    - Using stereotype annotations, you can create beans for only the application classes with a specific annotation
+    (e.g., @Component). Preferable approach over @Bean because it requires writing less code and it's easier to read
+    - Using @registerBean(), enables to implement custom logic for adding beans to the context
