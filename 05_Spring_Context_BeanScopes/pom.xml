@@ -3,19 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>spring-start-here-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>org.example</groupId>
-    <artifactId>spring-start-here-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>02_Spring_Context_Defining_beans</module>
-        <module>03_Spring_Context_Wiring_beans</module>
-        <module>04_Spring_Context_Abstractions</module>
-        <module>05_Spring_Context_BeanScopes</module>
-        <module>06_Using_Aspects_Spring_AOP</module>
-    </modules>
+    <artifactId>05_Spring_Context_BeanScopes</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

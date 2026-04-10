@@ -1,0 +1,14 @@
+You use stereotype annotations on classes for which Spring needs to create instances
+and add these instances as beans to its context. You never use stereotype annotations
+on interfaces.
+
+When the Spring context has more beans created with multiple implementations of the
+same abstraction, to instruct Spring which bean to inject, you can
+use the @Primary annotation to mark one of them as default, or
+use the @Qualifier annotation to name the bean and then instruct Spring to
+inject that bean by name.
+
+When we have service responsibility components, we use the @Service stereotype
+annotation instead of @Component. Likewise, when a component has repository
+responsibility, we use the @Repository stereotype annotation instead of
+@Component.
