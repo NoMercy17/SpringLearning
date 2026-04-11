@@ -1,0 +1,12 @@
+If you need to make an object bean in the Spring context, it should be singleton only if it’s immutable. Avoid designing mutable
+singleton beans.
+If a bean needs to be mutable, an option could be to use the prototype scope
+
+You can configure Spring to create a singleton bean either when the context is
+initialized (eager) or when the bean is referred for the first time (lazy). By default, a
+bean is eagerly instantiated.
+
+Be careful with injecting a prototype-scoped bean into a singleton-scoped bean. When
+you do something like this, you need to be aware that the singleton instance always
+uses the same prototype instance, which Spring injects when it creates the singleton
+instance.

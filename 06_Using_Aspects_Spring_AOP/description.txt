@@ -1,0 +1,15 @@
+An aspect is an object that intercepts a method call and can execute logic before, after,
+and even instead of executing the intercepted method. This helps you decouple part of
+the code from the business implementation and makes your app easier to maintain.
+
+Aspects support many essential Spring capabilities like transactions and securing
+methods.
+
+To define an aspect in Spring, you annotate the class implementing the aspect logic
+with the @Aspect annotation. But remember that Spring needs to manage an instance
+of this class, so you need to also add a bean of its type in the Spring context.
+
+Spring offers you five advice annotations: @Around, @Before, @After, @AfterThrowing, and
+@AfterReturning. In most cases we use @Around, which is also the most powerful.
+Multiple aspects can intercept the same method call. In this case, it’s recommended
+that you define an order for the aspects to execute using the @Order annotation.
