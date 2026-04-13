@@ -1,0 +1,11 @@
+Spring Boot also configures a set of components that
+intercept and manage HTTP requests. These components are part of a class design we
+name Spring MVC.
+Because Spring Boot autoconfigures the Spring MVC components and the servlet
+container, you only need to write the HTML document containing the data the app
+sends as a response and a controller class for a minimal HTTP request-response flow
+action.
+You use annotations to configure your controller and the controller’s actions. To mark a
+class as a Spring MVC controller, use the @Controller stereotype annotation. To
+assign a controller action to a specific HTTP request, use the @RequestMapping
+annotation.
