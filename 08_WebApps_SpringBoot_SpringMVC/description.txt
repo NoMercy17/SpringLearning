@@ -1,0 +1,15 @@
+Send data through the HTTP request:
+
+A template engine is a dependency that provides your app with the capability to easily
+get the data the controller sends and display it on the view.
+
+An HTTP REQUEST PARAMETER(for a small portion of data) represents a simple way to send values from client to
+server in a key-value(s) pair format. To send HTTP request parameters, you append
+them to the URI in a request query expression. They are also called query parameters.
+
+An HTTP request header is similar to the request parameters in that the request
+headers are sent through the HTTP header.(They do not appear in the URI)
+
+A PATH VARIABLE is the same as Request Parameter but we should use it when the value is mandatory
+
+The HTTP request body is mainly used to send a larger quantity of data (String or binary)
