@@ -17,6 +17,7 @@
         <module>06_Using_Aspects_Spring_AOP</module>
         <module>07_SpringBoot_SpringMVC</module>
         <module>08_WebApps_SpringBoot_SpringMVC</module>
+        <module>09_Spring_WebScopes</module>
     </modules>
 
     <properties>
@@ -42,12 +43,26 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.13.0</version>
+                    <configuration>
+                        <parameters>true</parameters>
+                    </configuration>
+                </plugin>
+                <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring-boot.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
     </build>
 
 </project>

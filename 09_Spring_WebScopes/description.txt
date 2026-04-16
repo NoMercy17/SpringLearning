@@ -1,0 +1,17 @@
+Request scope—Spring creates an instance of the bean for each HTTP request.
+
+Session scope—Spring creates an instance of the bean per HTTP session of the
+client. Multiple requests from the same client can share the same instance.
+
+Application scope—There’s only one instance for the whole application for that
+specific bean. Every request from any client can access this instance.
+
+Spring creates request-scoped bean instances for every HTTP request. This is quite
+often
+
+Spring links a session-scoped bean instance to the HTTP session of the client. This way,
+a session-scoped bean instance can be used to share data among multiple HTTP
+requests from the same client.
+
+With application-scoped bean instances being shared by all the web app requests.
+A better approach is to directly store the data in a database
