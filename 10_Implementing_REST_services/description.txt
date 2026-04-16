@@ -1,0 +1,12 @@
+the implementation of REST endpoints, either use @ResponseBody annotation to specify that a
+method directly returns the response body or replace the @Controller annotation with @RestController
+
+You can manage the HTTP status and headers by making your controller’s action return
+a ResponseEntity instance
+
+You can manage the exceptions in the controller’s action directly or separate the logic
+executed if the controller’s action throws an exception using a REST controller advice
+class.
+
+An endpoint can get data from the client through the HTTP request in request
+parameters, path variables, or the HTTP request body
