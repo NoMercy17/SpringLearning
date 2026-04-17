@@ -1,0 +1,12 @@
+JdbcTemplate is a Spring tool that simplifies the code you write to access a relational
+database using JDBC. The JdbcTemplate object depends on a data source to connect
+to the database server.
+
+To send a query that mutates data in a table, you use the JdbcTemplate object’s
+update() method. To send SELECT queries to retrieve data, you use one of the
+JdbcTemplate’s query() methods.
+
+To customize the data source your Spring Boot application uses, you configure a
+custom bean of the type java.sql.DataSource. If you declare a bean of this type in
+Spring’s context, Spring Boot will use it instead of configuring a default one. You use
+the same approach if you need a custom JdbcTemplate object.
