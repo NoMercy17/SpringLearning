@@ -18,6 +18,8 @@
         <module>07_SpringBoot_SpringMVC</module>
         <module>08_WebApps_SpringBoot_SpringMVC</module>
         <module>09_Spring_WebScopes</module>
+        <module>10_Implementing_REST_services</module>
+        <module>11_Consuming_REST_endpoints</module>
     </modules>
 
     <properties>

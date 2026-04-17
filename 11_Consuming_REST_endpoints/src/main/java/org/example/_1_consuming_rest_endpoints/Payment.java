@@ -1,6 +1,6 @@
-package org.example._0_implementing_rest_services.paymentExample;
+package org.example._1_consuming_rest_endpoints;
 
-public class PaymentDetails {
+public class Payment {
     private String id;
     private double amount;
 

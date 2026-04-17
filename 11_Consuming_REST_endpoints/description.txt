@@ -1,0 +1,10 @@
+OpenFeign—A solution offered by the Spring Cloud project that successfully
+simplifies the code you need to write to call a REST endpoint and adds several
+features relevant to how we implement services today
+
+RestTemplate—A simple tool used to call REST endpoints in Spring apps(old, deprecated)
+
+WebClient—A reactive solution for calling REST endpoints in a Spring app
+
+WebClient is an excellent tool for an app designed on a reactive approach and for nonreactive the
+best choice is OpenFeign
