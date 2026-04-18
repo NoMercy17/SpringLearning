@@ -21,6 +21,7 @@
         <module>10_Implementing_REST_services</module>
         <module>11_Consuming_REST_endpoints</module>
         <module>12_Using_data_sources_Spring</module>
+        <module>13_Transactions_Spring</module>
     </modules>
 
     <properties>

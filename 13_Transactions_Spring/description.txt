@@ -1,0 +1,11 @@
+A transaction is a defined set of mutable operations (operations that change data) that can either correctly
+execute them altogether or not at all. We refer to this as atomicity.
+
+To implement transactional code in Spring, you use the @Transactional annotation.
+You use the @Transactional annotation to mark a method you expect Spring to
+wrap in a transaction. You can also annotate a class with @Transactional to tell
+Spring that any class methods need to be transactional.
+
+At execution, a Spring aspect intercepts the methods annotated with
+@Transactional. The aspect starts the transaction, and if an exception occurs the
+aspect rolls back the transaction
