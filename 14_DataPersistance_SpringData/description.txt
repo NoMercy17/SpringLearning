@@ -1,0 +1,24 @@
+Spring Data offers a common abstraction layer over all these persistence technologies to simplify the use of multiple
+persistence technologies.
+
+Your app could use JDBC directly in various ways, but it could also rely on a framework implemented over JDBC.
+ex: Hibernate is an ORM persistence framework that relies on JDBC and simplifies some aspects of working with persisted
+data
+
+When developers use the term “Spring Data,” they refer in general to all the capabilities this project provides to your
+Spring app to connect to one persistence technology or another. In an app, generally you use a specific technology:
+JDBC, Hibernate, MongoDB, or another technology.
+
+Standard Spring Data Contracts:
+    Repository, which doesn’t provide any persistence operation
+    CrudRepository, which provides simple CREATE, READ, UPDATE, DELETE(CRUD) operations
+    PagingAndSortingRepository, which extends CrudRepository and adds operations for the pagination
+and sorting of the fetched records
+
+
+You use the @Query annotation with the Spring Data repository method to define the SQL query your app
+executes for that specific operation. If you declare a method and don’t explicitly specify a query with the @Query
+annotation, Spring Data will translate the method’s name into a SQL query
+
+Besides the @Query any operation that changes data (e.g., executes INSERT, UPDATE, or DELETE queries) must be
+annotated with the @Modifying
